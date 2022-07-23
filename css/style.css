@@ -32,6 +32,8 @@ a {
   --accent-color: #2196f3;
   --background-dark: #2f303a;
   --contrasting-color: #ffffff;
+  --svg-color: #afb1b8;
+  --background-secondary-color: #f5f4fa;
 }
 
 /* Боді */
@@ -156,8 +158,33 @@ header {
   padding: 32px 0;
 }
 
+.contact-mail {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  margin-right: 10px;
+}
+
+.contact-phone {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+  margin-right: 10px;
+}
+
+.contact-mail:hover,
+.contact-mail:focus {
+  fill: var(--accent-color);
+}
+
+.contact-phone:hover,
+.contact-phone:focus {
+  fill: var(--accent-color);
+}
+
 /* ===================/Контактна інформація=========== */
 
+/* ===================Footer============================ */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -173,6 +200,7 @@ header {
 .address {
   color: var(--contrasting-color);
   font-style: normal;
+  margin-right: 70px;
 }
 
 .contact {
@@ -200,18 +228,47 @@ header {
 .footer-entrance {
   margin-bottom: 9px;
 }
+
+.subtitle-invitation {
+  color: var(--contrasting-color);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+
+.cellar {
+  display: flex;
+}
+
+.social-list-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
+  background-color: var(--accent-color);
+}
+/* ===================/Footer============================ */
+
 /* =====================/Загальні стилі=============== */
 
 /* =====================Студія======================== */
 
 /* ====================Герой=========================== */
 .hero {
-  background-color: var(--background-dark);
   padding: 200px 0;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/backgroundimage.jpg);
   background-color: #c4c4c4;
-  max-width: 1600px;
   background-size: cover;
 }
 
@@ -265,6 +322,7 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .benefits {
@@ -282,7 +340,8 @@ header {
 .benefits-icon {
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--background-secondary-color);
+  padding: 25px 100px;
 }
 
 /* =======================/Наши особенности==================== */
@@ -312,8 +371,9 @@ header {
 /* ======================== Наша команда ========================*/
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--background-secondary-color);
 }
+
 .employee-list {
   display: flex;
   flex-wrap: wrap;
@@ -363,21 +423,26 @@ header {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #ffffff;
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
   background-color: var(--contrasting-color);
 }
 
-.socail-list-icon {
-  fill: #afb1b8;
+/* .social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--contrasting-color);
+} */
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
 }
 
-.social-list-link:hover .socail-list-icon,
-.social-list-link:focus .socail-list-icon {
-  background-color: var(--accent-color);
+.socail-list-icon {
+  fill: var(--svg-color);
+}
+
+.socail-list-icon:hover,
+.socail-list-icon:focus {
+  fill: var(--contrasting-color);
 }
 
 /* =========================Постоянные клиенты================= */
@@ -386,13 +451,14 @@ header {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .clients-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--svg-color);
   width: 170px;
   height: 92px;
 }
@@ -403,7 +469,7 @@ header {
 }
 
 .clients-icon {
-  fill: #afb1b8;
+  fill: var(--svg-color);
 }
 
 .clients-icon:hover,
