@@ -156,6 +156,8 @@ header {
 
 .link-contact {
   padding: 32px 0;
+  display: flex;
+  align-items: center;
 }
 
 .contact-mail {
@@ -251,6 +253,7 @@ header {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--contrasting-color);
 }
 
 .social-list-link-footer:hover,
@@ -424,24 +427,12 @@ header {
   height: 44px;
   border-radius: 50%;
   background-color: var(--contrasting-color);
+  fill: var(--svg-color);
 }
-
-/* .social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--contrasting-color);
-} */
 
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--accent-color);
-}
-
-.socail-list-icon {
-  fill: var(--svg-color);
-}
-
-.socail-list-icon:hover,
-.socail-list-icon:focus {
   fill: var(--contrasting-color);
 }
 
@@ -492,6 +483,8 @@ header {
 .button.secondary:focus {
   color: var(--contrasting-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button.secondary.current {
