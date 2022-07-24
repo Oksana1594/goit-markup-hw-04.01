@@ -25,7 +25,7 @@ a {
   text-decoration: none;
 }
 
-/* Змінні */
+/* Переменные */
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -36,7 +36,7 @@ a {
   --background-secondary-color: #f5f4fa;
 }
 
-/* Боді */
+/* Body */
 body {
   background-color: var(--contrasting-color);
   color: var(--primary-text-color);
@@ -59,9 +59,9 @@ body {
   border-radius: 4px;
 }
 
-/* =====================Загальні стилі=============== */
+/* =====================Общие стили=============== */
 
-/* ==================Навігація===================== */
+/* ==================Навигация===================== */
 
 header {
   border-bottom: 1px solid #ececec;
@@ -132,21 +132,21 @@ header {
   color: var(--accent-color);
 }
 
-/* ===================/Навігація====================== */
+/* ===================/Навигация====================== */
 
-/* ===================Контактна інформація=========== */
+/* ===================Контактная информация=========== */
 
 .contact-info {
   display: flex;
   margin-left: auto;
 }
 
-.contact-info .link-contact {
+.link-contact {
   color: var(--primary-text-color);
 }
 
-.contact-info .link-contact:hover,
-.contact-info .link-contact:focus {
+.link-contact:hover,
+.link-contact:focus {
   color: var(--accent-color);
 }
 
@@ -163,28 +163,28 @@ header {
 .contact-mail {
   width: 16px;
   height: 12px;
-  fill: #757575;
+  fill: currentColor;
   margin-right: 10px;
 }
 
 .contact-phone {
   width: 10px;
   height: 16px;
-  fill: #757575;
+  fill: currentColor;
   margin-right: 10px;
 }
 
 .contact-mail:hover,
 .contact-mail:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 .contact-phone:hover,
 .contact-phone:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
-/* ===================/Контактна інформація=========== */
+/* ===================/Контактная информация=========== */
 
 /* ===================Footer============================ */
 .visually-hidden {
@@ -262,9 +262,9 @@ header {
 }
 /* ===================/Footer============================ */
 
-/* =====================/Загальні стилі=============== */
+/* =====================/Общие стили=============== */
 
-/* =====================Студія======================== */
+/* =====================Студия======================== */
 
 /* ====================Герой=========================== */
 .hero {
@@ -340,11 +340,13 @@ header {
   margin-right: 30px;
 }
 
-.benefits-icon {
-  width: 270px;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 120px;
   background-color: var(--background-secondary-color);
-  padding: 25px 100px;
 }
 
 /* =======================/Наши особенности==================== */
@@ -409,7 +411,7 @@ header {
 .text {
   font-size: 16px;
   line-height: 1.19;
-  padding-bottom: 30px;
+  margin-bottom: 16px;
   text-align: center;
 }
 
@@ -445,28 +447,33 @@ header {
   flex-wrap: wrap;
 }
 
-.clients-item {
+.clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid var(--svg-color);
+  border-radius: 4px;
   width: 170px;
   height: 92px;
+  color: var(--svg-color);
 }
 
-.clients-list .clients-item:hover,
-.clients-list .clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .clients-icon {
-  fill: var(--svg-color);
+  fill: currentColor;
 }
 
 .clients-icon:hover,
 .clients-icon:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
+
+/* ======================== /Постоянные клиенты================= */
 /*  ======================/Студія============================ */
 
 /* ======================Портфоліо=========================== */
